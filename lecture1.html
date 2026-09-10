@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First JavaScript</title>
+</head>
+<body>
+    <h1>My First JavaScript Example</h1>
+    <button id="myBtn">Click Me</button>
+    <p id="output">Nothing clicked yet.</p>
+
+    <script>
+        console.log("Page loaded!"); // runs immediately when page loads
+
+        const btn = document.querySelector('#myBtn');
+        const output = document.querySelector('#output');
+
+        btn.addEventListener('click', () => {
+            output.textContent = "You clicked the button!";
+            console.log("Button was clicked");
+        });
+    </script>
+</body>
+</html>
